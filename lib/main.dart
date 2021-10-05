@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vestes/constants.dart';
-import 'package:vestes/screens/home/home_screen.dart';
+import 'package:vestes/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
