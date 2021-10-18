@@ -10,7 +10,9 @@ const Map<TabItem, MyTab> tabs = {
 };
 
 class MyBottomNavigation extends StatelessWidget {
-  MyBottomNavigation({required this.currentTab, required this.onSelectTab});
+  const MyBottomNavigation(
+      {Key? key, required this.currentTab, required this.onSelectTab})
+      : super(key: key);
 
   final TabItem currentTab;
 

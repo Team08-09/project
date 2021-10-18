@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import '../models/tab.dart';
-import 'package:vestes/screens/newsScreen.dart';
+import 'package:vestes/screens/news_screen.dart';
 
 class TabNavigator extends StatelessWidget {
-  TabNavigator({required this.navigatorKey, required this.tabItem});
+  const TabNavigator(
+      {Key? key, required this.navigatorKey, required this.tabItem})
+      : super(key: key);
   final GlobalKey<NavigatorState> navigatorKey;
   final TabItem tabItem;
   @override
@@ -13,11 +15,11 @@ class TabNavigator extends StatelessWidget {
       onGenerateRoute: (routeSettings) {
         Widget currentPage;
         if (tabItem == TabItem.NEWS) {
-          currentPage = News();
+          currentPage = const News();
         } else if (tabItem == TabItem.SEARCH) {
-          currentPage = News();
+          currentPage = const News();
         } else {
-          currentPage = News();
+          currentPage = const News();
         }
 
         return MaterialPageRoute(

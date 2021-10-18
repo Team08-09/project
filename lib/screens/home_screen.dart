@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:vestes/constants.dart';
-import 'package:vestes/screens/newsScreen.dart';
 import 'package:vestes/models/tab.dart';
 import 'package:vestes/models/tab_navigator.dart';
 import 'package:vestes/models/bottom_navigation.dart';
@@ -60,20 +59,20 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
             backgroundColor: Colors.white,
             //elevation: 0,
-            shadowColor: Color(0x44000000),
+            shadowColor: const Color(0x44000000),
             leading: Image.asset("assets/icons/crown.png"),
             leadingWidth: 300,
             actions: <Widget>[
               IconButton(
                   onPressed: () {},
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.search,
                     color: kIconsColor,
                     size: 30,
                   )),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   CupertinoIcons.shopping_cart,
                   color: kIconsColor,
                   size: 30,
