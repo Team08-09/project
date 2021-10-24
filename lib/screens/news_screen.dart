@@ -39,7 +39,7 @@ class News extends StatelessWidget {
                                 controller: controller,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.only(
+                                    padding: const EdgeInsets.only(
                                       right: 10,
                                     ),
                                     child: Container(
@@ -54,9 +54,23 @@ class News extends StatelessWidget {
                                             Padding(
                                                 padding:
                                                     EdgeInsets.only(bottom: 7),
-                                                child: Image.network(
-                                                  'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                  height: 150,
+                                                child: Stack(
+                                                  children: [
+                                                    Image.network(
+                                                      'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                      height: 150,
+                                                    ),
+                                                    Positioned(
+                                                        right: -5,
+                                                        top: -5,
+                                                        child: IconButton(
+                                                            onPressed: () {},
+                                                            icon: const Icon(
+                                                              Icons.favorite,
+                                                              color: PinkRed,
+                                                              size: 30,
+                                                            )))
+                                                  ],
                                                 )),
                                             const Text(
                                               "1299 rub",
@@ -74,7 +88,7 @@ class News extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.only(
+                                    padding: const EdgeInsets.only(
                                       right: 10,
                                     ),
                                     child: Container(
@@ -89,9 +103,23 @@ class News extends StatelessWidget {
                                             Padding(
                                                 padding:
                                                     EdgeInsets.only(bottom: 7),
-                                                child: Image.network(
-                                                  'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                  height: 150,
+                                                child: Stack(
+                                                  children: [
+                                                    Image.network(
+                                                      'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                      height: 150,
+                                                    ),
+                                                    Positioned(
+                                                        right: -5,
+                                                        top: -5,
+                                                        child: IconButton(
+                                                            onPressed: () {},
+                                                            icon: const Icon(
+                                                              Icons.favorite,
+                                                              color: PinkRed,
+                                                              size: 30,
+                                                            )))
+                                                  ],
                                                 )),
                                             const Text(
                                               "1299 rub",
@@ -109,7 +137,7 @@ class News extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.only(
+                                    padding: const EdgeInsets.only(
                                       right: 10,
                                     ),
                                     child: Container(
@@ -124,9 +152,23 @@ class News extends StatelessWidget {
                                             Padding(
                                                 padding:
                                                     EdgeInsets.only(bottom: 7),
-                                                child: Image.network(
-                                                  'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                  height: 150,
+                                                child: Stack(
+                                                  children: [
+                                                    Image.network(
+                                                      'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                      height: 150,
+                                                    ),
+                                                    Positioned(
+                                                        right: -5,
+                                                        top: -5,
+                                                        child: IconButton(
+                                                            onPressed: () {},
+                                                            icon: const Icon(
+                                                              Icons.favorite,
+                                                              color: PinkRed,
+                                                              size: 30,
+                                                            )))
+                                                  ],
                                                 )),
                                             const Text(
                                               "1299 rub",
@@ -144,7 +186,7 @@ class News extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.only(
+                                    padding: const EdgeInsets.only(
                                       right: 10,
                                     ),
                                     child: Container(
@@ -159,9 +201,23 @@ class News extends StatelessWidget {
                                             Padding(
                                                 padding:
                                                     EdgeInsets.only(bottom: 7),
-                                                child: Image.network(
-                                                  'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                  height: 150,
+                                                child: Stack(
+                                                  children: [
+                                                    Image.network(
+                                                      'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                      height: 150,
+                                                    ),
+                                                    Positioned(
+                                                        right: -5,
+                                                        top: -5,
+                                                        child: IconButton(
+                                                            onPressed: () {},
+                                                            icon: const Icon(
+                                                              Icons.favorite,
+                                                              color: PinkRed,
+                                                              size: 30,
+                                                            )))
+                                                  ],
                                                 )),
                                             const Text(
                                               "1299 rub",
@@ -179,7 +235,7 @@ class News extends StatelessWidget {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsets.only(
+                                    padding: const EdgeInsets.only(
                                       right: 10,
                                     ),
                                     child: Container(
@@ -194,9 +250,23 @@ class News extends StatelessWidget {
                                             Padding(
                                                 padding:
                                                     EdgeInsets.only(bottom: 7),
-                                                child: Image.network(
-                                                  'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                  height: 150,
+                                                child: Stack(
+                                                  children: [
+                                                    Image.network(
+                                                      'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                      height: 150,
+                                                    ),
+                                                    Positioned(
+                                                        right: -5,
+                                                        top: -5,
+                                                        child: IconButton(
+                                                            onPressed: () {},
+                                                            icon: const Icon(
+                                                              Icons.favorite,
+                                                              color: PinkRed,
+                                                              size: 30,
+                                                            )))
+                                                  ],
                                                 )),
                                             const Text(
                                               "1299 rub",
@@ -371,6 +441,7 @@ class News extends StatelessWidget {
                         ],
                       ),
                     ),
+                    // -----------------Second Container-----------------------------
                     Container(
                       constraints: const BoxConstraints.tightFor(
                           width: double.infinity, height: 300),
@@ -395,7 +466,7 @@ class News extends StatelessWidget {
                                       controller: controller,
                                       children: [
                                         Padding(
-                                          padding: EdgeInsets.only(
+                                          padding: const EdgeInsets.only(
                                             right: 10,
                                           ),
                                           child: Container(
@@ -411,9 +482,27 @@ class News extends StatelessWidget {
                                                   Padding(
                                                       padding: EdgeInsets.only(
                                                           bottom: 7),
-                                                      child: Image.network(
-                                                        'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                        height: 150,
+                                                      child: Stack(
+                                                        children: [
+                                                          Image.network(
+                                                            'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                            height: 150,
+                                                          ),
+                                                          Positioned(
+                                                              right: -5,
+                                                              top: -5,
+                                                              child: IconButton(
+                                                                  onPressed:
+                                                                      () {},
+                                                                  icon:
+                                                                      const Icon(
+                                                                    Icons
+                                                                        .favorite,
+                                                                    color:
+                                                                        PinkRed,
+                                                                    size: 30,
+                                                                  )))
+                                                        ],
                                                       )),
                                                   const Text(
                                                     "1299 rub",
@@ -431,7 +520,7 @@ class News extends StatelessWidget {
                                           ),
                                         ),
                                         Padding(
-                                          padding: EdgeInsets.only(
+                                          padding: const EdgeInsets.only(
                                             right: 10,
                                           ),
                                           child: Container(
@@ -447,9 +536,27 @@ class News extends StatelessWidget {
                                                   Padding(
                                                       padding: EdgeInsets.only(
                                                           bottom: 7),
-                                                      child: Image.network(
-                                                        'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                        height: 150,
+                                                      child: Stack(
+                                                        children: [
+                                                          Image.network(
+                                                            'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                            height: 150,
+                                                          ),
+                                                          Positioned(
+                                                              right: -5,
+                                                              top: -5,
+                                                              child: IconButton(
+                                                                  onPressed:
+                                                                      () {},
+                                                                  icon:
+                                                                      const Icon(
+                                                                    Icons
+                                                                        .favorite,
+                                                                    color:
+                                                                        PinkRed,
+                                                                    size: 30,
+                                                                  )))
+                                                        ],
                                                       )),
                                                   const Text(
                                                     "1299 rub",
@@ -467,7 +574,7 @@ class News extends StatelessWidget {
                                           ),
                                         ),
                                         Padding(
-                                          padding: EdgeInsets.only(
+                                          padding: const EdgeInsets.only(
                                             right: 10,
                                           ),
                                           child: Container(
@@ -483,9 +590,27 @@ class News extends StatelessWidget {
                                                   Padding(
                                                       padding: EdgeInsets.only(
                                                           bottom: 7),
-                                                      child: Image.network(
-                                                        'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                        height: 150,
+                                                      child: Stack(
+                                                        children: [
+                                                          Image.network(
+                                                            'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                            height: 150,
+                                                          ),
+                                                          Positioned(
+                                                              right: -5,
+                                                              top: -5,
+                                                              child: IconButton(
+                                                                  onPressed:
+                                                                      () {},
+                                                                  icon:
+                                                                      const Icon(
+                                                                    Icons
+                                                                        .favorite,
+                                                                    color:
+                                                                        PinkRed,
+                                                                    size: 30,
+                                                                  )))
+                                                        ],
                                                       )),
                                                   const Text(
                                                     "1299 rub",
@@ -503,7 +628,7 @@ class News extends StatelessWidget {
                                           ),
                                         ),
                                         Padding(
-                                          padding: EdgeInsets.only(
+                                          padding: const EdgeInsets.only(
                                             right: 10,
                                           ),
                                           child: Container(
@@ -519,9 +644,27 @@ class News extends StatelessWidget {
                                                   Padding(
                                                       padding: EdgeInsets.only(
                                                           bottom: 7),
-                                                      child: Image.network(
-                                                        'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                        height: 150,
+                                                      child: Stack(
+                                                        children: [
+                                                          Image.network(
+                                                            'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                            height: 150,
+                                                          ),
+                                                          Positioned(
+                                                              right: -5,
+                                                              top: -5,
+                                                              child: IconButton(
+                                                                  onPressed:
+                                                                      () {},
+                                                                  icon:
+                                                                      const Icon(
+                                                                    Icons
+                                                                        .favorite,
+                                                                    color:
+                                                                        PinkRed,
+                                                                    size: 30,
+                                                                  )))
+                                                        ],
                                                       )),
                                                   const Text(
                                                     "1299 rub",
@@ -539,7 +682,7 @@ class News extends StatelessWidget {
                                           ),
                                         ),
                                         Padding(
-                                          padding: EdgeInsets.only(
+                                          padding: const EdgeInsets.only(
                                             right: 10,
                                           ),
                                           child: Container(
@@ -555,9 +698,27 @@ class News extends StatelessWidget {
                                                   Padding(
                                                       padding: EdgeInsets.only(
                                                           bottom: 7),
-                                                      child: Image.network(
-                                                        'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
-                                                        height: 150,
+                                                      child: Stack(
+                                                        children: [
+                                                          Image.network(
+                                                            'https://img.ltwebstatic.com/images3_pi/2019/11/26/1574760539ecd08bd39a026c4a7f19963013d041b3_thumbnail_900x.webp',
+                                                            height: 150,
+                                                          ),
+                                                          Positioned(
+                                                              right: -5,
+                                                              top: -5,
+                                                              child: IconButton(
+                                                                  onPressed:
+                                                                      () {},
+                                                                  icon:
+                                                                      const Icon(
+                                                                    Icons
+                                                                        .favorite,
+                                                                    color:
+                                                                        PinkRed,
+                                                                    size: 30,
+                                                                  )))
+                                                        ],
                                                       )),
                                                   const Text(
                                                     "1299 rub",
