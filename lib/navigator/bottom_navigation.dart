@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vestes/models/tab.dart';
+import 'package:vestes/navigator/tab.dart';
 import 'package:vestes/constants.dart';
 
 const Map<TabItem, MyTab> tabs = {

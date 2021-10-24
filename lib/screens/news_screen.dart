@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:vestes/constants.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class News extends StatelessWidget {
   const News({Key? key}) : super(key: key);
@@ -382,7 +381,7 @@ class News extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             const Text(
-                              "New arrival",
+                              "Popular",
                               style:
                                   TextStyle(color: Colors.white, fontSize: 25),
                             ),

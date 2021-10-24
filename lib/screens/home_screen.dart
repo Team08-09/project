@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:vestes/constants.dart';
-import 'package:vestes/models/tab.dart';
-import 'package:vestes/models/tab_navigator.dart';
-import 'package:vestes/models/bottom_navigation.dart';
+import 'package:vestes/navigator/tab.dart';
+import 'package:vestes/navigator/tab_navigator.dart';
+import 'package:vestes/navigator/bottom_navigation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
