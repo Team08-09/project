@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vestes/screens/catalog_screen.dart';
 import 'package:vestes/screens/info_screen.dart';
 import '../navigator/tab.dart';
 import 'package:vestes/screens/news_screen.dart';
@@ -18,7 +19,7 @@ class TabNavigator extends StatelessWidget {
         if (tabItem == TabItem.NEWS) {
           currentPage = const News();
         } else if (tabItem == TabItem.SEARCH) {
-          currentPage = const News();
+          currentPage = const Catalog();
         } else if (tabItem == TabItem.FAVORITES) {
           currentPage = const News();
         } else {
