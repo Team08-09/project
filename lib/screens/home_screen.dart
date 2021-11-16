@@ -4,6 +4,8 @@ import 'package:vestes/constants.dart';
 import 'package:vestes/navigator/tab.dart';
 import 'package:vestes/navigator/tab_navigator.dart';
 import 'package:vestes/navigator/bottom_navigation.dart';
+import 'package:vestes/screens/basket_screen.dart';
+import 'package:vestes/screens/find_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -64,14 +66,18 @@ class _HomeScreenState extends State<HomeScreen> {
             leadingWidth: 300,
             actions: <Widget>[
               IconButton(
-                  onPressed: () {},
+                  onPressed: () {Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Find()));},
                   icon: const Icon(
                     Icons.search,
                     color: kIconsColor,
                     size: 30,
                   )),
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Basket()));
+                },
                 icon: const Icon(
                   CupertinoIcons.shopping_cart,
                   color: kIconsColor,
