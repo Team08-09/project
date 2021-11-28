@@ -66,8 +66,10 @@ class _HomeScreenState extends State<HomeScreen> {
             leadingWidth: 300,
             actions: <Widget>[
               IconButton(
-                  onPressed: () {Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Find()));},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Find()));
+                  },
                   icon: const Icon(
                     Icons.search,
                     color: kIconsColor,

@@ -11,8 +11,13 @@ class Catalog extends StatelessWidget {
       child: Column(children: [
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const GoodList()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => GoodList(
+                          categoryName: 'SALE',
+                          categoryURL: 'women\'s clothing',
+                        )));
           },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 10),
@@ -40,8 +45,13 @@ class Catalog extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const GoodList()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => GoodList(
+                          categoryName: 'Female',
+                          categoryURL: 'women\'s clothing',
+                        )));
           },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 10),
@@ -59,7 +69,7 @@ class Catalog extends StatelessWidget {
                     Padding(
                         padding: const EdgeInsets.only(right: 45),
                         child: Image.network(
-                          'https://tlgrmx.ru/stickers/662/40.png',
+                          'https://picsy.ru/images/photos/1200/1/devushka-png-na-prozrachnom-fone-27249207.jpg',
                           height: 130,
                         ))
                   ],
@@ -68,8 +78,13 @@ class Catalog extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const GoodList()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => GoodList(
+                          categoryName: 'Male',
+                          categoryURL: 'men\'s clothing',
+                        )));
           },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 10),
@@ -87,7 +102,7 @@ class Catalog extends StatelessWidget {
                     Padding(
                         padding: const EdgeInsets.only(right: 65),
                         child: Image.network(
-                          'https://clipart-best.com/img/vladimir-putin/vladimir-putin-clip-art-21.png',
+                          'https://www.nicepng.com/png/full/88-882283_fashion-men-png-gentleman.png',
                           height: 120,
                         ))
                   ],
@@ -96,8 +111,13 @@ class Catalog extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const GoodList()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => GoodList(
+                          categoryName: 'Boys',
+                          categoryURL: 'men\'s clothing',
+                        )));
           },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 10),
@@ -113,9 +133,9 @@ class Catalog extends StatelessWidget {
                       child: Text('Boys', style: TextStyle(fontSize: 22)),
                     ),
                     Padding(
-                        padding: const EdgeInsets.only(right: 10),
+                        padding: const EdgeInsets.only(right: 30),
                         child: Image.network(
-                          'https://avatanplus.com/files/resources/original/575acd3ea7f461553ab1bce0.png',
+                          'https://www.mpa-pro.fr/resize/500x500/zc/2/f/0/src/sites/mpapro/files/products/d11774.png',
                           height: 110,
                         ))
                   ],
@@ -124,8 +144,13 @@ class Catalog extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const GoodList()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => GoodList(
+                          categoryName: 'Girls',
+                          categoryURL: 'women\'s clothing',
+                        )));
           },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 10),
@@ -143,8 +168,8 @@ class Catalog extends StatelessWidget {
                     Padding(
                         padding: const EdgeInsets.only(right: 50),
                         child: Image.network(
-                          'https://www.indyturk.com/sites/default/files/greta-thunberg.png',
-                          height: 110,
+                          'https://4.bp.blogspot.com/-moYDFLkY-JY/UXQp9JpZR7I/AAAAAAAAFgA/pllxAksbQgU/s1600/MR_Beautiful+Spring+Girl.png',
+                          height: 120,
                         ))
                   ],
                 )),
@@ -152,8 +177,13 @@ class Catalog extends StatelessWidget {
         ),
         InkWell(
           onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const GoodList()));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => GoodList(
+                          categoryName: 'Accessories',
+                          categoryURL: 'jewelery',
+                        )));
           },
           child: Padding(
             padding: const EdgeInsets.only(bottom: 40),
@@ -171,11 +201,11 @@ class Catalog extends StatelessWidget {
                     ),
                     Padding(
                         padding: const EdgeInsets.only(
-                          right: 50,
+                          right: 20,
                         ),
                         child: Image.network(
-                          'https://clipart-best.com/img/handcuffs/handcuffs-clip-art-53.png',
-                          height: 50,
+                          'http://pngimg.com/uploads/jewelry/jewelry_PNG6721.png',
+                          height: 110,
                         ))
                   ],
                 )),

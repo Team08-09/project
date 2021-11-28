@@ -18,7 +18,7 @@ class TabNavigator extends StatelessWidget {
       onGenerateRoute: (routeSettings) {
         Widget currentPage;
         if (tabItem == TabItem.NEWS) {
-          currentPage = const News();
+          currentPage = News();
         } else if (tabItem == TabItem.SEARCH) {
           currentPage = const Catalog();
         } else if (tabItem == TabItem.FAVORITES) {

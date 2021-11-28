@@ -1,10 +1,34 @@
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:http/http.dart' as http;
 import 'package:vestes/constants.dart';
 
+import 'find_result_screen.dart';
+
 class Find extends StatelessWidget {
-  const Find({Key? key}) : super(key: key);
+  Find({Key? key}) : super(key: key);
+  late List<dynamic> findList = [];
+
+  Future<void> findInCatalog(text, context) async {
+    var response = await http.get('https://fakestoreapi.com/products');
+    List<dynamic> allGoods = jsonDecode(response.body);
+    findList.clear();
+    for (int i = 0; i < allGoods.length; i++) {
+      String string = allGoods[i]['title'];
+      if (string.toLowerCase().contains(text)) {
+        findList.add(allGoods[i]);
+      }
+    }
+    if (!findList.isEmpty)
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => FindResult(
+                    goodList: findList,
+                  )));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +39,7 @@ class Find extends StatelessWidget {
             shadowColor: const Color(0x44000000),
             leadingWidth: 30,
             leading: BackButton(color: kIconsColor),
-            title: Text(
+            title: const Text(
               'Find',
               style: TextStyle(color: kTextColor),
             )),
@@ -23,11 +47,15 @@ class Find extends StatelessWidget {
           children: [
             Padding(
               padding: EdgeInsets.only(left: 10, right: 10, top: 20),
-              child: const TextField(
-                obscureText: true,
+              child: TextField(
+                onSubmitted: (text) {
+                  print("Введенный текст: $text");
+                  findInCatalog(text, context);
+                },
+                //obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Find',
+                  labelText: 'Название, артикул',
                 ),
               ),
             )

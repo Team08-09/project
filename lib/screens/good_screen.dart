@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'package:vestes/constants.dart';
 
-class GoodList extends StatelessWidget {
-  const GoodList({Key? key}) : super(key: key);
+class Good extends StatelessWidget {
+  const Good({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
