@@ -17,7 +17,11 @@ class GoodListItem extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const Good()));
+            context,
+            MaterialPageRoute(
+                builder: (context) => Good(
+                      info: info,
+                    )));
       },
       child: Padding(
         padding: const EdgeInsets.only(

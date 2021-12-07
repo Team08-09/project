@@ -24,7 +24,6 @@ class _FindResultState extends State<FindResult> {
   Future<void> createResult() async {
     goodList = widget.goodList;
     _find_count = widget.goodList.length;
-    print(goodList);
   }
 
   @override
@@ -52,7 +51,25 @@ class _FindResultState extends State<FindResult> {
                   )),
               body: SingleChildScrollView(
                   child: Column(
-                children: _findGoods,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                          padding: EdgeInsets.only(top: 10),
+                          child: Text(
+                            'Найдено $_find_count товара(-ов)',
+                            style: TextStyle(fontWeight: FontWeight.w200),
+                          ))
+                    ],
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 10, right: 10, top: 10),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: _findGoods),
+                  ),
+                ],
               )));
         });
   }

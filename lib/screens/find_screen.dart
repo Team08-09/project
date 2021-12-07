@@ -49,7 +49,6 @@ class Find extends StatelessWidget {
               padding: EdgeInsets.only(left: 10, right: 10, top: 20),
               child: TextField(
                 onSubmitted: (text) {
-                  print("Введенный текст: $text");
                   findInCatalog(text, context);
                 },
                 //obscureText: true,

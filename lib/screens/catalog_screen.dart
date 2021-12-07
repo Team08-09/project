@@ -135,7 +135,7 @@ class Catalog extends StatelessWidget {
                     Padding(
                         padding: const EdgeInsets.only(right: 30),
                         child: Image.network(
-                          'https://www.mpa-pro.fr/resize/500x500/zc/2/f/0/src/sites/mpapro/files/products/d11774.png',
+                          'https://catherineasquithgallery.com/uploads/posts/2021-02/1614534357_35-p-malchik-na-belom-fone-47.png',
                           height: 110,
                         ))
                   ],
