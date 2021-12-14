@@ -4,7 +4,7 @@ import 'package:vestes/screens/good_screen.dart';
 
 import '../constants.dart';
 
-class NewArrivalItem extends StatelessWidget {
+class NewArrivalItem extends StatefulWidget {
   NewArrivalItem({
     Key? key,
     required this.info,
@@ -13,6 +13,17 @@ class NewArrivalItem extends StatelessWidget {
         );
 
   final Map<String, dynamic> info;
+  _NewArrivalItemState createState() => _NewArrivalItemState();
+}
+
+class _NewArrivalItemState extends State<NewArrivalItem> {
+  late Map<String, dynamic> info;
+  bool addFavorite = false;
+
+  @override
+  void initState() {
+    info = widget.info;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,9 +57,15 @@ class NewArrivalItem extends StatelessWidget {
                                 right: -5,
                                 top: -5,
                                 child: IconButton(
-                                    onPressed: () {},
-                                    icon: const Icon(
-                                      Icons.favorite,
+                                    onPressed: () {
+                                      setState(() {
+                                        addFavorite = !addFavorite;
+                                      });
+                                    },
+                                    icon: Icon(
+                                      addFavorite
+                                          ? Icons.favorite
+                                          : Icons.favorite_border,
                                       color: PinkRed,
                                       size: 30,
                                     )))

@@ -49,7 +49,7 @@ class GoodListItem extends StatelessWidget {
                             child: IconButton(
                                 onPressed: () {},
                                 icon: const Icon(
-                                  Icons.favorite,
+                                  Icons.favorite_border,
                                   color: PinkRed,
                                   size: 30,
                                 )))

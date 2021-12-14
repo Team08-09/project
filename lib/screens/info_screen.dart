@@ -2,7 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:vestes/constants.dart';
+
+import 'nots_screen.dart';
 
 class Info extends StatelessWidget {
   const Info({Key? key}) : super(key: key);
@@ -37,7 +40,10 @@ class Info extends StatelessWidget {
                                   color: Colors.white,
                                 ),
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                launch(
+                                    'https://accounts.google.com/ServiceLogin');
+                              },
                             ),
                             TextButton(
                               style: TextButton.styleFrom(
@@ -50,7 +56,9 @@ class Info extends StatelessWidget {
                                   color: Colors.white,
                                 ),
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                launch('https://accounts.google.com/signup');
+                              },
                             )
                           ])),
                   Padding(
@@ -88,7 +96,12 @@ class Info extends StatelessWidget {
                           padding: EdgeInsets.only(bottom: 20),
                           child: Row(children: [
                             TextButton.icon(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => Nots()));
+                                },
                                 icon: const Icon(
                                   Icons.notifications,
                                   color: kIconsColor,

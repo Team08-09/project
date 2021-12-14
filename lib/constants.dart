@@ -17,3 +17,6 @@ const PinkRed = Color(0xFFF1747A);
 const kDefaultPaddin = 20.0;
 
 const id = 1;
+
+List favoritesId = [];
+List<dynamic> itemInfo = [];
